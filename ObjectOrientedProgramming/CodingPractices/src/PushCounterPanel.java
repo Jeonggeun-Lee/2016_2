@@ -1,0 +1,65 @@
+//********************************************************************
+//  PushCounterPanel.java       Java Foundations
+//
+//  Demonstrates a graphical user interface and an event listener.
+//********************************************************************
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+class PushCounterPanel extends JPanel
+{
+   private int count;
+   private JButton push;
+   private JLabel label;
+
+   //-----------------------------------------------------------------
+   //  Constructor: Sets up the GUI.
+   //-----------------------------------------------------------------
+   public PushCounterPanel ()
+   {
+      count = 0;
+
+      push = new JButton ("Push Me!");
+      push.addActionListener (new ButtonListener2());
+      push.addActionListener (new ButtonListener());
+      
+
+      label = new JLabel ("Pushes: " + count);
+
+      add (push);
+      add (label);
+
+      setBackground (Color.cyan);
+      setPreferredSize (new Dimension(300, 40));
+   }
+
+   //*****************************************************************
+   //  Represents a listener for button push (action) events.
+   //*****************************************************************
+   private class ButtonListener implements ActionListener
+   {
+      //--------------------------------------------------------------
+      //  Updates the counter and label when the button is pushed.
+      //--------------------------------------------------------------
+      public void actionPerformed (ActionEvent event)
+      {
+         count++;
+         label.setText("Pushes: " + count);
+      }
+   }
+   
+   private class ButtonListener2 implements ActionListener
+   {
+      //--------------------------------------------------------------
+      //  Updates the counter and label when the button is pushed.
+      //--------------------------------------------------------------
+      public void actionPerformed (ActionEvent event)
+      {
+         count *=2;
+         label.setText("Pushes: " + count);
+      }
+   }
+  
+}

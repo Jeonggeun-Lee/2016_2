@@ -1,0 +1,15 @@
+Program beginning.
+Level 1 beginning.
+Level 2 beginning.
+Level 3 beginning.
+
+The exception message is: / by zero
+The call stack trace:
+java.lang.ArithmeticException: / by zero
+at ExceptionScope.level3(wk11_java01_201415060.java:53)
+at ExceptionScope.level2(wk11_java01_201415060.java:40)
+at ExceptionScope.level1(wk11_java01_201415060.java:18)
+at Propagation.main(Propagation.java:75)
+
+Level 1 ending.
+Program ending.

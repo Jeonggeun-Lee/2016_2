@@ -1,0 +1,19 @@
+/**
+wk_java0_201415060 클래스는  
+
+위한 클래스입니다.
+@author 201415060 이정근(nalbojima@daum.net)
+@version 1.0 Dec. 2016
+@helper 없음
+*/
+
+
+/**
+main 함수는
+
+니다.
+@param args: the command line arguments
+@return void
+*/
+
+/***/

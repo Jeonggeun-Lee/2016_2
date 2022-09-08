@@ -1,0 +1,6 @@
+InformationRetrieval
+
+Subclassing is expressed using the keyword extends
+
+
+elegance and method
